@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Editable Button with JavaScript</title>
+
+  <style>
+    /* Simple styling */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h2>Click the Button</h2>
+
+  <!-- The button -->
+  <button id="myButton">Click Here Please!!</button>
+
+  <p id="message"></p>
+  
+   <script>
+
+    const button = document.getElementById('myButton');
+
+    button.addEventListener('click', () => {
+      const message = document.getElementById('message');
+      message.textContent = 'Stormi X KodoZero!';
+    });
+   </script>
+</body>
+</html>
